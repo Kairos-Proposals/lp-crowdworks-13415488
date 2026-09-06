@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kairos より「Ballet Studio Kozue」様へのご提案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Zen+Old+Mincho&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --white:#FFFDFC;
+    --blush:#F7E4EA;
+    --blush-deep:#EFC9D5;
+    --rose:#C98BA1;
+    --wine:#6E4256;
+    --gold:#C9A876;
+    --ink:#3E2E37;
+    --ink-soft:#7A6470;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--white);
+    color:var(--ink);
+    font-family:'Noto Sans JP', sans-serif;
+    font-weight:300;
+    line-height:1.9;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{
+    font-family:'Zen Old Mincho', serif;
+    font-weight:400;
+    color:var(--wine);
+    margin:0;
+  }
+  .en{
+    font-family:'Cormorant Garamond', serif;
+    letter-spacing:0.12em;
+  }
+  a{color:inherit;}
+  .wrap{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 6vw;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+      radial-gradient(ellipse at 50% 18%, rgba(255,255,255,0.9), rgba(247,228,234,0.4) 55%, var(--white) 80%);
+    overflow:hidden;
+    padding:8vh 6vw 10vh;
+  }
+  .tutu{
+    position:absolute;
+    top:6%;
+    left:50%;
+    width:1px;height:1px;
+  }
+  .tutu span{
+    position:absolute;
+    border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.85), rgba(233,178,197,0.15) 70%, transparent 75%);
+    border:1px solid rgba(201,139,161,0.25);
+  }
+  .tutu span:nth-child(1){width:620px;height:620px;left:-310px;top:-40px;}
+  .tutu span:nth-child(2){width:460px;height:460px;left:-230px;top:40px;background:radial-gradient(circle at 65% 35%, rgba(255,255,255,0.7), rgba(201,139,161,0.12) 70%, transparent 78%);}
+  .tutu span:nth-child(3){width:300px;height:300px;left:-150px;top:120px;background:radial-gradient(circle at 40% 60%, rgba(255,255,255,0.9), rgba(233,178,197,0.2) 70%, transparent 80%);}
+
+  .hero-inner{position:relative;z-index:2;}
+  .eyebrow{
+    font-family:'Cormorant Garamond', serif;
+    font-size:0.95rem;
+    letter-spacing:0.35em;
+    color:var(--rose);
+    margin-bottom:1.6rem;
+    text-transform:uppercase;
+  }
+  .hero h1{
+    font-size:clamp(2.1rem, 5vw, 3.4rem);
+    line-height:1.6;
+    color:var(--wine);
+  }
+  .hero h1 small{
+    display:block;
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.1rem;
+    color:var(--rose);
+    letter-spacing:0.08em;
+    margin-top:1.2rem;
+  }
+  .hero p.lead{
+    max-width:520px;
+    margin:2.2rem auto 0;
+    color:var(--ink-soft);
+    font-size:0.95rem;
+  }
+  .ribbon-line{
+    width:120px;
+    height:1px;
+    margin:2.4rem auto 0;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  /* ---------- SECTION COMMON ---------- */
+  section{
+    padding:9vh 0;
+    position:relative;
+  }
+  .tag{
+    display:inline-block;
+    font-family:'Cormorant Garamond', serif;
+    font-size:0.8rem;
+    letter-spacing:0.3em;
+    color:var(--gold);
+    text-transform:uppercase;
+    margin-bottom:1rem;
+  }
+  .section-title{
+    font-size:clamp(1.5rem, 3vw, 2rem);
+    margin-bottom:2.4rem;
+  }
+
+  /* ---------- UNDERSTANDING ---------- */
+  .understand{
+    background:linear-gradient(180deg, var(--white) 0%, var(--blush) 100%);
+  }
+  .understand-card{
+    background:#fff;
+    border:1px solid var(--blush-deep);
+    border-radius:2px;
+    padding:2.6rem clamp(1.4rem,4vw,3.2rem);
+    position:relative;
+  }
+  .understand-card::before{
+    content:"";
+    position:absolute;
+    top:-1px;left:-1px;
+    width:26px;height:26px;
+    border-top:2px solid var(--gold);
+    border-left:2px solid var(--gold);
+  }
+  .understand-card::after{
+    content:"";
+    position:absolute;
+    bottom:-1px;right:-1px;
+    width:26px;height:26px;
+    border-bottom:2px solid var(--gold);
+    border-right:2px solid var(--gold);
+  }
+  .understand-card p{margin:0 0 1.2rem; font-size:0.95rem; color:var(--ink);}
+  .understand-card p:last-child{margin-bottom:0;}
+  .points{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0.8rem;
+    margin-top:2rem;
+  }
+  .points div{
+    text-align:center;
+    padding:0.9rem 0.4rem;
+    border:1px dashed var(--blush-deep);
+    font-size:0.78rem;
+    color:var(--wine);
+    letter-spacing:0.05em;
+  }
+
+  /* ---------- VALUE ---------- */
+  .value-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1.6rem;
+  }
+  .value-card{
+    background:#fff;
+    border-radius:6px;
+    padding:2.4rem 1.8rem;
+    box-shadow:0 10px 30px rgba(110,66,86,0.06);
+    border-top:3px solid var(--blush-deep);
+    transition:border-color .3s ease;
+  }
+  .value-card:hover{border-top-color:var(--rose);}
+  .value-num{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2.4rem;
+    color:var(--blush-deep);
+    display:block;
+    margin-bottom:0.6rem;
+  }
+  .value-card h3{
+    font-size:1.1rem;
+    margin-bottom:0.8rem;
+  }
+  .value-card p{
+    font-size:0.86rem;
+    color:var(--ink-soft);
+    margin:0;
+  }
+
+  /* ---------- FLOW ---------- */
+  .flow{
+    background:linear-gradient(180deg, var(--blush) 0%, var(--white) 100%);
+  }
+  .steps{
+    position:relative;
+    padding-left:0;
+    list-style:none;
+    margin:0;
+  }
+  .steps::before{
+    content:"";
+    position:absolute;
+    left:29px;
+    top:10px;
+    bottom:10px;
+    width:1px;
+    background:linear-gradient(180deg, var(--gold), var(--blush-deep));
+  }
+  .step{
+    position:relative;
+    padding:0 0 2.6rem 70px;
+  }
+  .step:last-child{padding-bottom:0;}
+  .step-num{
+    position:absolute;
+    left:0;top:0;
+    width:60px;height:60px;
+    border-radius:50%;
+    background:#fff;
+    border:1px solid var(--blush-deep);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.3rem;
+    color:var(--rose);
+  }
+  .step h3{
+    font-size:1.05rem;
+    margin-bottom:0.5rem;
+  }
+  .step p{
+    font-size:0.86rem;
+    color:var(--ink-soft);
+    margin:0;
+  }
+  .step .when{
+    font-family:'Cormorant Garamond', serif;
+    font-size:0.78rem;
+    color:var(--gold);
+    letter-spacing:0.1em;
+    display:block;
+    margin-bottom:0.4rem;
+  }
+
+  /* ---------- CLOSING ---------- */
+  .closing{
+    text-align:center;
+    background:
+      radial-gradient(ellipse at 50% 0%, var(--blush) 0%, var(--white) 70%);
+    padding-bottom:12vh;
+  }
+  .closing h2{
+    font-size:clamp(1.5rem,3.4vw,2.2rem);
+    margin-bottom:1.4rem;
+  }
+  .closing p{
+    max-width:480px;
+    margin:0 auto 2.4rem;
+    color:var(--ink-soft);
+    font-size:0.92rem;
+  }
+  .cta-btn{
+    display:inline-block;
+    padding:1rem 3rem;
+    background:var(--wine);
+    color:#fff;
+    text-decoration:none;
+    border-radius:2px;
+    font-family:'Cormorant Garamond', serif;
+    letter-spacing:0.15em;
+    font-size:1rem;
+    position:relative;
+    transition:background .3s ease;
+  }
+  .cta-btn:hover{background:var(--rose);}
+  .signature{
+    margin-top:4rem;
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    color:var(--rose);
+    font-size:0.95rem;
+    letter-spacing:0.08em;
+  }
+
+  footer{
+    text-align:center;
+    padding:2.4rem 0;
+    font-size:0.72rem;
+    color:var(--ink-soft);
+    border-top:1px solid var(--blush-deep);
+  }
+
+  @media (max-width:760px){
+    .value-grid{grid-template-columns:1fr;}
+    .points{grid-template-columns:repeat(2,1fr);}
+    .tutu span:nth-child(1){width:420px;height:420px;left:-210px;}
+    .tutu span:nth-child(2){width:320px;height:320px;left:-160px;}
+    .tutu span:nth-child(3){width:220px;height:220px;left:-110px;}
+    .step{padding-left:60px;}
+  }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="tutu"><span></span><span></span><span></span></div>
+    <div class="hero-inner">
+      <div class="eyebrow">Proposal from Kairos</div>
+      <h1>三歳の爪先から、<br>物語ははじまる。
+        <small>“Lavi Ballet” から “Ballet Studio Kozue” へ —<br>新しい名前と共に歩む、はじめの一歩を。</small>
+      </h1>
+      <div class="ribbon-line"></div>
+      <p class="lead">Kairosより、Ballet Studio Kozue様の公式ホームページ制作について、<br class="pc-only">ペライチを用いたご提案をお届けいたします。</p>
+    </div>
+  </section>
+
+  <section class="understand">
+    <div class="wrap">
+      <span class="tag en">Understanding</span>
+      <h2 class="section-title">教室の数だけ、物語があることを<br>存じております</h2>
+      <div class="understand-card">
+        <p>
+          大曽根、春日井、東桜幼稚園、蒲郡——それぞれの教室で紡がれてきたレッスンの時間が、
+          「Ballet Studio Kozue」というひとつの名前のもとに、あらためて歩き出そうとしていること。
+          そして、そのスタートの場所として、保護者の方にとって安心できるホームページが必要であることを、
+          私たちは丁寧に受け止めております。
+        </p>
+        <p>
+          3歳のお子さまが最初に触れる場所であること。大曽根限定の「アフターバレエ」に込められた、
+          子どもだけでなく保護者の方の時間まで想うやさしさ。派手さではなく、上品さと安心感。
+          そのすべてを壊さないよう、ご用意いただくデザインイメージ・写真・文章を丁寧に活かした
+          ホームページづくりをお約束いたします。
+        </p>
+        <div class="points">
+          <div>教室について</div>
+          <div>クラス紹介</div>
+          <div>月謝・料金</div>
+          <div>レッスンスケジュール</div>
+          <div>講師紹介</div>
+          <div>体験レッスン</div>
+          <div>よくある質問</div>
+          <div>お問い合わせ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="value">
+    <div class="wrap">
+      <span class="tag en">What Kairos Offers</span>
+      <h2 class="section-title">Kairosがご提供できること</h2>
+      <div class="value-grid">
+        <div class="value-card">
+          <span class="value-num en">01</span>
+          <h3>デザインイメージの丁寧な再現</h3>
+          <p>ご用意いただく参考画像・ロゴ・写真をもとに、白と淡いピンクを基調とした「上品で、幼すぎない」雰囲気をペライチ上で忠実に再現いたします。</p>
+        </div>
+        <div class="value-card">
+          <span class="value-num en">02</span>
+          <h3>複数教室の情報を、迷わせない設計へ</h3>
+          <p>大曽根・春日井・東桜幼稚園・蒲郡、それぞれ異なるレッスン内容や場所の情報を、保護者の方が迷わず見つけられるよう整理して構成します。</p>
+        </div>
+        <div class="value-card">
+          <span class="value-num en">03</span>
+          <h3>体験レッスンへ、自然につながる導線</h3>
+          <p>ページを見た保護者の方が「体験レッスンを申し込みたい」と思えるよう、お問い合わせフォームやボタンの配置に配慮したレイアウトをつくります。</p>
+        </div>
+        <div class="value-card">
+          <span class="value-num en">04</span>
+          <h3>スマホでも変わらない、やさしい見え方</h3>
+          <p>ほとんどの保護者の方がスマートフォンでご覧になることを前提に、文字サイズや余白、写真の見せ方まで丁寧に調整いたします。</p>
+        </div>
+        <div class="value-card">
+          <span class="value-num en">05</span>
+          <h3>納品後も、ご自身で育てられる仕組み</h3>
+          <p>料金・スケジュール・文章・写真をご自身で更新できるよう、操作方法をわかりやすくご説明。長く付き合えるホームページとしてお渡しします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flow">
+    <div class="wrap">
+      <span class="tag en">Our Process</span>
+      <h2 class="section-title">ご相談から納品までの流れ</h2>
+      <ul class="steps">
+        <li class="step">
+          <div class="step-num en">1</div>
+          <span class="when en">Step 01</span>
+          <h3>ヒアリング・素材のお預かり</h3>
+          <p>ロゴ、文章、写真、デザインイメージをお預かりし、掲載したいご要望をあらためて丁寧に伺います。</p>
+        </li>
+        <li class="step">
+          <div class="step-num en">2</div>
+          <span class="when en">Step 02</span>
+          <h3>構成・デザインのご提案</h3>
+          <p>TOPページから各教室紹介、料金表まで、ページ構成案とデザインの方向性をご確認いただきます。</p>
+        </li>
+        <li class="step">
+          <div class="step-num en">3</div>
+          <span class="when en">Step 03</span>
+          <h3>ペライチ上での制作</h3>
+          <p>お預かりしたアカウントにて、フォーム設置・Instagram連携・スマホ表示調整を含め実装します。</p>
+        </li>
+        <li class="step">
+          <div class="step-num en">4</div>
+          <span class="when en">Step 04</span>
+          <h3>ご確認・修正</h3>
+          <p>実際の画面をご覧いただきながら、文章や写真の位置、雰囲気の微調整を重ねてまいります。</p>
+        </li>
+        <li class="step">
+          <div class="step-num en">5</div>
+          <span class="when en">Step 05</span>
+          <h3>納品・更新方法のご案内</h3>
+          <p>公開後、料金やスケジュールなどご自身で更新いただける操作方法を、わかりやすくご案内いたします。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <span class="tag en">Next Step</span>
+      <h2>新しい名前の教室に、<br>ふさわしい佇まいを。</h2>
+      <p>
+        「Ballet Studio Kozue」という新しい一歩を、私たちも一緒に形にできましたら幸いです。
+        まずはメッセージにて、制作実績やお見積り、進め方の詳細についてお気軽にご相談ください。
+      </p>
+      <a href="#" class="cta-btn">お問い合わせ・ご相談へ</a>
+      <div class="signature">— Kairos, Web制作・システム開発チーム</div>
+    </div>
+  </section>
+
+  <footer>
+    Proposal for “Ballet Studio Kozue” by Kairos ／ 本ページはご提案用として作成しております
+  </footer>
+
+</body>
+</html>
